@@ -50,7 +50,7 @@ plotZebraStyle <- function(obj) {
   }
 
   if (isTRUE(obj$zebra_styles_ignore_subheaders)) {
-    last_headers <- min(last_headers[1] - 1, 1)
+    last_headers <- max(last_headers[1] - 1, 1)
   }
 
   for (i in 1:length(last_headers)) {
